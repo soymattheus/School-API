@@ -78,9 +78,6 @@ def get_students():
     except ValueError:
         return jsonify({"error": "The parameters page and limit must be integer numbers"}), 400
 
-
-
-
 @subject_bp.route("/subject", methods=["POST"])
 @swag_from({
     "tags": ["Subject"],
